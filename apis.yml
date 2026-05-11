@@ -1,0 +1,139 @@
+aid: quickbooks-accounting
+name: QuickBooks Online Accounting API
+description: >-
+  The QuickBooks Online Accounting API is Intuit's REST API for reading and
+  writing the core accounting entities of a QuickBooks Online company file,
+  including customers, vendors, items, invoices, bills, payments, accounts,
+  journal entries, and tax codes. Apps authenticate via OAuth 2.0 against
+  the Intuit Developer platform and target a per-company realm using
+  https://quickbooks.api.intuit.com/v3/company/{realmId} in production or
+  the sandbox host for testing. It is the foundation API for accounting,
+  bookkeeping, invoicing, and financial reporting integrations on QuickBooks
+  Online.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Accounting
+  - Bookkeeping
+  - Invoicing
+  - Small Business
+  - QuickBooks
+  - Intuit
+  - Financial Data
+  - OAuth 2.0
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/quickbooks-accounting/refs/heads/main/apis.yml
+created: '2026-05-11'
+modified: '2026-05-11'
+specificationVersion: '0.19'
+apis:
+  - aid: quickbooks-accounting:accounting-api
+    name: QuickBooks Online Accounting API
+    description: >-
+      REST API for managing QuickBooks Online accounting entities including
+      Customer, Vendor, Employee, Item, Invoice, Bill, Payment, BillPayment,
+      JournalEntry, Account, TaxCode, and Company information. All requests
+      are scoped to a company realm and authenticated with an OAuth 2.0
+      bearer access token issued by the Intuit Developer authorization server.
+    humanURL: https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/account
+    baseURL: https://quickbooks.api.intuit.com/v3/company/{realmId}
+    tags:
+      - Accounting
+      - Invoicing
+      - Bookkeeping
+      - REST API
+      - OAuth 2.0
+    properties:
+      - type: Documentation
+        url: https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/account
+      - type: Getting Started
+        url: https://developer.intuit.com/app/developer/qbo/docs/get-started
+      - type: Authentication
+        url: https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0
+      - type: Sandbox
+        url: https://sandbox-quickbooks.api.intuit.com/v3/company/{realmId}
+      - type: API Explorer
+        url: https://developer.intuit.com/app/developer/qbo/docs/api/accounting/most-commonly-used/account
+
+common:
+  - type: Website
+    url: https://quickbooks.intuit.com
+  - type: Documentation
+    url: https://developer.intuit.com/app/developer/qbo/docs/develop
+  - type: Developer Portal
+    url: https://developer.intuit.com
+  - type: Pricing
+    url: https://quickbooks.intuit.com/pricing/
+  - type: Sign Up
+    url: https://developer.intuit.com/app/developer/homepage
+  - type: Sandbox
+    url: https://developer.intuit.com/app/developer/sandbox
+  - type: Support
+    url: https://help.developer.intuit.com/
+  - type: SDK Hub
+    url: https://developer.intuit.com/app/developer/qbo/docs/develop/sdks-and-samples-collections
+features:
+  - name: Customers and Vendors
+    description: >-
+      Full CRUD over customer, vendor, and employee records with addresses,
+      tax info, balances, and custom fields.
+  - name: Invoices and Bills
+    description: >-
+      Create and manage sales invoices, vendor bills, sales receipts, credit
+      memos, refunds, and apply payments against them.
+  - name: Items and Inventory
+    description: >-
+      Manage service and inventory items including categories, pricing, tax
+      codes, and stock quantity for inventory-enabled companies.
+  - name: Accounts and Journal Entries
+    description: >-
+      Read the chart of accounts and post journal entries directly for
+      bookkeeping automation and GL synchronization.
+  - name: Reports
+    description: >-
+      Run native QuickBooks reports such as Profit and Loss, Balance Sheet,
+      Trial Balance, and General Ledger via the Reports API.
+  - name: Webhooks
+    description: >-
+      Subscribe to entity change notifications so apps can react to creates,
+      updates, deletes, and merges in near-real time.
+solutions:
+  - name: Accounting Integration
+    description: >-
+      Sync invoices, customers, and payments between QuickBooks Online and
+      external CRM, e-commerce, billing, or ERP systems.
+  - name: Embedded Bookkeeping
+    description: >-
+      Power vertical SaaS bookkeeping experiences by reading and writing
+      directly to customers' QuickBooks Online company files.
+  - name: Financial Reporting Automation
+    description: >-
+      Pull GL, AR, and AP data on a schedule for consolidated reporting,
+      KPI dashboards, and FP&A automation.
+useCases:
+  - name: E-commerce Order Sync
+    description: >-
+      Push Shopify/WooCommerce orders into QuickBooks as invoices or sales
+      receipts with line items, taxes, and payments.
+  - name: Expense Management
+    description: >-
+      Create vendor bills and bill payments from expense management tools
+      and reconcile them against bank feeds.
+  - name: AR Automation
+    description: >-
+      Automate invoice creation, dunning, and payment application based on
+      events in CRM and billing systems.
+integrations:
+  - name: Salesforce
+    description: Sync accounts, opportunities, and orders to QuickBooks customers and invoices
+  - name: Shopify
+    description: Push orders, refunds, and payouts from Shopify into QuickBooks
+  - name: Stripe
+    description: Reconcile Stripe payouts and charges against QuickBooks invoices
+  - name: HubSpot
+    description: Bidirectional sync of contacts, companies, and deals with QuickBooks
+  - name: Bill.com
+    description: AP automation reading vendor bills from QuickBooks for approval workflows
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
