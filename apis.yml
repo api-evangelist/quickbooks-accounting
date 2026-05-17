@@ -46,7 +46,7 @@ apis:
     properties:
       - type: Documentation
         url: https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/account
-      - type: Getting Started
+      - type: GettingStarted
         url: https://developer.intuit.com/app/developer/qbo/docs/get-started
       - type: Authentication
         url: https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0
@@ -64,7 +64,7 @@ common:
     url: https://developer.intuit.com
   - type: Pricing
     url: https://quickbooks.intuit.com/pricing/
-  - type: Sign Up
+  - type: SignUp
     url: https://developer.intuit.com/app/developer/homepage
   - type: Sandbox
     url: https://developer.intuit.com/app/developer/sandbox
