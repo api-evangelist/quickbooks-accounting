@@ -56,6 +56,10 @@ apis:
         url: https://developer.intuit.com/app/developer/qbo/docs/api/accounting/most-commonly-used/account
 
 common:
+  - type: GitHubOrganization
+    url: https://github.com/intuit
+  - type: LinkedIn
+    url: https://www.linkedin.com/showcase/quickbooks
   - type: Website
     url: https://quickbooks.intuit.com
   - type: Documentation
