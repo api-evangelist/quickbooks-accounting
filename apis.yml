@@ -64,11 +64,11 @@ common:
     url: https://quickbooks.intuit.com
   - type: Documentation
     url: https://developer.intuit.com/app/developer/qbo/docs/develop
-  - type: Developer Portal
+  - type: DeveloperPortal
     url: https://developer.intuit.com
   - type: Pricing
     url: https://quickbooks.intuit.com/pricing/
-  - type: SignUp
+  - type: Signup
     url: https://developer.intuit.com/app/developer/homepage
   - type: Sandbox
     url: https://developer.intuit.com/app/developer/sandbox
