@@ -56,6 +56,8 @@ apis:
         url: https://developer.intuit.com/app/developer/qbo/docs/api/accounting/most-commonly-used/account
 
 common:
+  - type: DomainSecurity
+    url: security/quickbooks-accounting-domain-security.yml
   - type: GitHubOrganization
     url: https://github.com/intuit
   - type: LinkedIn
