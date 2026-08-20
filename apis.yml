@@ -31,6 +31,15 @@ tags:
   - QuickBooks
   - Intuit
   - Financial Data
+  - Authentication
+tags_raw:
+  - Accounting
+  - Bookkeeping
+  - Invoicing
+  - Small Business
+  - QuickBooks
+  - Intuit
+  - Financial Data
   - OAuth 2.0
 url: >-
   https://raw.githubusercontent.com/api-evangelist/quickbooks-accounting/refs/heads/main/apis.yml
@@ -49,6 +58,12 @@ apis:
     humanURL: https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/account
     baseURL: https://quickbooks.api.intuit.com/v3/company/{realmId}
     tags:
+      - Accounting
+      - Invoicing
+      - Bookkeeping
+      - REST API
+      - Authentication
+    tags_raw:
       - Accounting
       - Invoicing
       - Bookkeeping
